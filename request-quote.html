@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - Citizens Global Cargo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.jpg" alt="Citizens Global Cargo Logo" class="logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="heavy-airlift.html">Heavy Airlift/Project</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="customer-center.html">Customer Center</a>
+                        <ul class="submenu">
+                            <li><a href="rates-transit-time.html">Rates & Transit Time</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                            <li><a href="fraud-alert.html">Fraud Alert</a></li>
+                            <li><a href="online-forms.html">Online Forms</a></li>
+                            <li><a href="request-quote.html">Request a Quote</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="office-hours.html">Office Hours</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="quote-intro">
+            <h2>Request a Quote</h2>
+            <p>Fill out the form below to request a personalized quote for your logistics requirements. Fields marked with * are required.</p>
+        </section>
+        <section class="quote-form-section">
+            <form action="#" method="post" class="quote-form">
+                <div class="form-group">
+                    <label for="name">Name: *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail Address: *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Telephone #: *</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="commodity">Nature of Commodity:</label>
+                    <input type="text" id="commodity" name="commodity">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination: *</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight: *</label>
+                    <input type="text" id="weight" name="weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="dimensions">Dimensions (L x W x H):</label>
+                    <input type="text" id="dimensions" name="dimensions" placeholder="e.g., 10 x 20 x 30">
+                </div>
+                <div class="form-group">
+                    <label for="hazardous">Hazardous/Non-Hazardous:</label>
+                    <select id="hazardous" name="hazardous">
+                        <option value="non-hazardous">Non-Hazardous</option>
+                        <option value="hazardous">Hazardous</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="boxes"># of Boxes/Pallets: *</label>
+                    <input type="number" id="boxes" name="boxes" required>
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I hereby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo-container">
+            <img src="images/logo.jpg" alt="Citizens Global Cargo Logo" class="footer-logo">
+        </div>
+        <p>&copy; 2023 Citizens Global Cargo</p>
+    </footer>
+    <script src="js/header.js"></script>
+</body>
+</html>
